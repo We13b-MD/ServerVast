@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="12345">
+    <InLine>
+      <AdSystem>Chivas Ad Server</AdSystem>
+      <AdTitle>In-Banner Video Ad</AdTitle>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <TrackingEvents>
+              <!-- Impression Tracking -->
+              <Tracking event="impression">http://localhost:3000/impression</Tracking>
+
+              <!-- Start Event -->
+              <Tracking event="start">http://localhost:3000/start</Tracking>
+
+              <!-- First Quartile -->
+              <Tracking event="firstQuartile">http://localhost:3000/firstQuartile</Tracking>
+
+              <!-- Midpoint -->
+              <Tracking event="midpoint">http://localhost:3000/midpoint</Tracking>
+
+              <!-- Third Quartile -->
+              <Tracking event="thirdQuartile">http://localhost:3000/thirdQuartile</Tracking>
+
+              <!-- Complete -->
+              <Tracking event="complete">http://localhost:3000/complete</Tracking>
+
+              <!-- Mute Event -->
+              <Tracking event="mute">http://localhost:3000/mute</Tracking>
+
+              <!-- Unmute Event -->
+              <Tracking event="unmute">http://localhost:3000/unmute</Tracking>
+
+              <!-- Pause Event -->
+              <Tracking event="pause">http://localhost:3000/pause</Tracking>
+
+              <!-- Resume Event -->
+              <Tracking event="resume">http://localhost:3000/resume</Tracking>
+
+              <!-- ClickThrough Event -->
+              <Tracking event="clickThrough">http://localhost:3000/clickThrough</Tracking>
+
+              <!-- ClickTracking Event -->
+              <Tracking event="clickTracking">http://localhost:3000/clickTracking</Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>https://www.chivas.com/en-ng/</ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="300" height="250">
+                https://res.cloudinary.com/dvfgzdhvu/video/upload/v1732641992/WhatsApp_Video_2024-11-26_at_4.42.35_PM_oldnnk.mp4
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
